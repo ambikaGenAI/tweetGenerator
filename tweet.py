@@ -11,7 +11,7 @@ tweet_prompt_template=prompts.PromptTemplate(input_variables={"number","topic"},
 googlemodel=ChatGoogleGenerativeAI(model="gemini-1.5-flash-latest")
 tweet_chain=tweet_prompt_template | googlemodel
 
-
+st.set_page_config(page_title="Tweet Generator")
 st.header("Tweet Generator")
 st.subheader("Generates tweets as per required number")
 
